@@ -1,0 +1,10 @@
+- name: this playbook will install, configure and deploy web pages into nginx
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install nginx webserver
+      apt: name=nginx state=latest update_cache=yes
+  
+    - name: start the nginx web server
+      #service: name=nginx start=started enabled=yes
+      command: service nginx start
