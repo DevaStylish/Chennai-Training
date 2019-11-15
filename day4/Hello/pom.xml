@@ -9,10 +9,10 @@
 	<distributionManagement>
 		<repository>
 			<id>artifactory</id>
-			<url>http://l92.168.12.163:8081/artifactory/boa-maven</url>
+			<url>http://192.168.12.163:8081/artifactory/boa-maven</url>
 		</repository>
 	</distributionManagement>
-
+Could not transfer artifact com.boa:boa-hello-app:jar:1.0.0 from/to artifactory (http://l92.168.12.163:8081/artifactory/boa-maven): l92.168.12.163: Name or service not known: Unknown host l92.168.12.163: Name or service not known -> [Help 1]
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
